@@ -40,10 +40,7 @@ public class Day1 {
 	 */
 	public static void main(String[] args) {
 		List<String> inputLines = Utils.Files.readFileByLine("src/Day1/input.txt");
-		// List<String> inputLines = new ArrayList<String>(Arrays.asList(new String[] {
-		// "two1nine", "eightwothree",
-		// "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234",
-		// "7pqrstsixteen" }));
+		// List<String> inputLines = Utils.Files.readFileByLine("src/Day1/test.txt");
 
 		List<Integer> numbersInLines = getNumbersInLines(inputLines);
 
