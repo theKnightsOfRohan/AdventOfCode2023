@@ -39,7 +39,7 @@ public class Day1 {
 	 * Adding these together produces 281.
 	 */
 	public static void main(String[] args) {
-		List<String> inputLines = readFileByLine("src/Day1/input.txt");
+		List<String> inputLines = Utils.Files.readFileByLine("src/Day1/input.txt");
 		// List<String> inputLines = new ArrayList<String>(Arrays.asList(new String[] {
 		// "two1nine", "eightwothree",
 		// "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234",
@@ -103,19 +103,5 @@ public class Day1 {
 		}
 
 		return numbersInLine.get(0) * 10 + numbersInLine.get(numbersInLine.size() - 1);
-	}
-
-	private static List<String> readFileByLine(String string) {
-		List<String> lines = new ArrayList<>();
-		try (BufferedReader br = new BufferedReader(new FileReader(string))) {
-			String line;
-			while ((line = br.readLine()) != null) {
-				lines.add(line);
-			}
-			return lines;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return null;
-		}
 	}
 }
